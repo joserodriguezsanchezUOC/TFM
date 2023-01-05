@@ -1,7 +1,4 @@
 
-Universitat Oberta de Catalunya · M.U. Ciencia de datos
-Procesamiento de lenguaje natural · José Rodríguez Sánchez
-
 Clasificación automática de ofertas para portal de empleo
 =========================================================
 
@@ -15,8 +12,7 @@ José Rodríguez Sánchez
 
 Acerca de este software
 -----------------------
-Corresponde al desarrollo de la Práctica 2 de la asignatura M2.851 - Tipología y ciclo de vida de los datos
-Máster Universitario Data Science (MUDS)
+Corresponde a los anexos correspondientes al desarrollo del Trabajo Final de Máster sobre Procesamiento de lenguaje natural (PLN) del Máster Universitario Ciencia de datos de la Universitat Oberta de Catalunya
 
 
 Dataset
