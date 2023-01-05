@@ -42,6 +42,6 @@ select * from
 	distinct '"' + label + '"' as label, '"' + text + '"'  as text
 	FROM 
 	ofertasNov2022
-	where len(text) between 4 and 80
+	where len(text) <= 80 -- ELIMINACIÓN OUTLIERS SUPERIORES
 ) A
 ORDER BY NEWID()
