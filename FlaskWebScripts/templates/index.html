@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="signupFrm">
+	<div class="wrapper">
+		<form action="/predict" method="POST" class="form">
+			<h1 class="title">Predicción por título de oferta</h1>
+			<div class="inputContainer">
+					<input type="text" class="input" name="tituloOferta" size="70" required>
+					<label for="" class="label">Título de la oferta de empleo</label>
+			</div>
+			<div class="inputContainer">
+				<select name="threshold" class="input" required>
+					<option value="">Seleccionar</option>
+					<option value="0.001">0,001</option>	  	  
+					<option value="0.25">0,25</option>	  	  
+					<option value="0.5">0,5</option>	  
+					<option value="0.75">0,75</option>	  
+				</select>
+				<label for="" class="label">Threshold/Umbral de ajuste</label>
+			</div>
+			<input type="submit" class="submitBtn" value="Predecir Keyword/Etiqueta">
+		</form>
+	</div>
+		
+</div>
+
+{% endblock %}
