@@ -19,10 +19,11 @@ Acerca de esta documentación / código
 Corresponde a los anexos correspondientes al desarrollo del Trabajo Final de Máster sobre Procesamiento de lenguaje natural (PLN) del Máster Universitario Ciencia de datos de la Universitat Oberta de Catalunya.
 
 
-Estudio descriptivo
--------------------
+Estudio descriptivo de los datos
+--------------------------------
 Como soporte extra durante el estudio descriptivo de los datos, se ha recopilado información en el documento
 [TFM . Estudio descriptivo](https://docs.google.com/spreadsheets/d/e/2PACX-1vQFMQfj4Hr4MkGt8LWHtPXxOxn8OHoCSOWzi7ySCNt1qo_N5Z6EwswFA3nlGgaa98a1dVOD1q6e4BV1/pubhtml).
+
 
 Licencia
 --------
