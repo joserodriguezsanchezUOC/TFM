@@ -21,7 +21,12 @@ def predictFunction(text, modelo, threshold):
 	# CARGA ETIQUETAS DE CONJUNTO DE DATOS
 	import pandas as pd
 	import csv
-	domain_labels = pd.read_csv('/home/iXXXXXX/TFM/etiquetas/domainLabels_Nov2022.csv').values.tolist()
+	
+	if modelo == "/home/iXXXXXX/TFM/modelos/checkpointNov2022":
+		domain_labels = pd.read_csv('/home/iberanuncios/TFM/etiquetas/domainLabels_Nov2022.csv').values.tolist()
+	else:
+		domain_labels = pd.read_csv('/home/iberanuncios/TFM/etiquetas/domainLabels_2022.csv').values.tolist()
+		
 	domain_labels = [i for row in domain_labels for i in row] # Flat
 	domain_labels = sorted(list(domain_labels))
 
