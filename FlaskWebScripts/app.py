@@ -1,17 +1,27 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'a0201893b879e3cff472febaf92f6260a98a1357200f225d'
+app.config['SECRET_KEY'] = 'secret code'
 
 app = Flask(__name__)
 
 
 # FUNCIÓN PRINCIPAL DE PREDICCIÓN
 def predictFunction(text, modelo, threshold):
+
+	# CONTROL PARÁMETROS DE ENTRADA
+	if not modelo:
+		modelo="/home/iXXXXXX/TFM/modelos/checkpointNov2022"
+	
+	if not threshold:
+		threshold=0.5
+	else:
+		threshold = float(threshold)
+
 	# CARGA ETIQUETAS DE CONJUNTO DE DATOS
 	import pandas as pd
 	import csv
-	domain_labels = pd.read_csv('/home/iberanuncios/TFM/etiquetas/domainLabels_Nov2022.csv').values.tolist()
+	domain_labels = pd.read_csv('/home/iXXXXXX/TFM/etiquetas/domainLabels_Nov2022.csv').values.tolist()
 	domain_labels = [i for row in domain_labels for i in row] # Flat
 	domain_labels = sorted(list(domain_labels))
 
@@ -50,11 +60,7 @@ def predictFunction(text, modelo, threshold):
 				if idx == idx2:
 					predicted_labels.append(domain_labels[idx2])
 	
-	# SALIDA JSON PARA INTEGRACIÓN CON OTROS SERVICIOS
-	import json
-	json_str = json.dumps(predicted_labels)
-
-	return json_str
+	return predicted_labels
 
 
 @app.route('/')
@@ -66,16 +72,8 @@ def index():
 def predict():
 	text = request.form.get("tituloOferta")
 	modelo = request.form.get("modelo")
-	
-	if not modelo:
-		modelo="/home/iberanuncios/TFM/modelos/checkpointNov2022"
-	
 	threshold = request.form.get("threshold")
-	if not threshold:
-		threshold=0.5
-	else:
-		threshold = float(threshold)
-		
+			
 	return render_template('predict.html', prediction = predictFunction(text, modelo, threshold), tituloOferta = text)
 	
 
@@ -84,14 +82,9 @@ def predict():
 def predictService():
 	text = request.form.get("tituloOferta")
 	modelo = request.form.get("modelo")
-	
-	if not modelo:
-		modelo="/home/iberanuncios/TFM/modelos/checkpointNov2022"
-	
 	threshold = request.form.get("threshold")
-	if not threshold:
-		threshold=0.5
-	else:
-		threshold = float(threshold)
-		
-	return predictFunction(text, modelo, threshold)
+	
+	# SALIDA JSON: LEGIBLE + FACILIDAD DE INTEGRACIÓN CON OTROS SERVICIOS
+	from flask import jsonify
+	return jsonify(predictFunction(text, modelo, threshold))
+	
