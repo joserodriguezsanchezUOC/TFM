@@ -14,8 +14,8 @@ Autor
 José Rodríguez Sánchez
 
 
-Acerca de esta documentación
-----------------------------
+Acerca de esta documentación / código
+-------------------------------------
 Corresponde a los anexos correspondientes al desarrollo del Trabajo Final de Máster sobre Procesamiento de lenguaje natural (PLN) del Máster Universitario Ciencia de datos de la Universitat Oberta de Catalunya.
 
 
