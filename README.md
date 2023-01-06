@@ -1,8 +1,12 @@
+# TFM · UOC · Máster Universitario en Ciencia de Datos
 
-Clasificación automática de ofertas para portal de empleo
-=========================================================
+## Clasificación automática de ofertas para portal de empleo
 
-Análisis de la calidad del vino tinto a través de sus principales componentes
+En el contexto real de un portal web de empleo, se aprovecharán los avances de la inteligencia artificial en el Procesamiento de Lenguaje Natural para clasificar de forma automática las ofertas de trabajo a través de etiquetas.
+
+Se sustituirá un sistema rudimentario de etiquetado, a partir de reglas sobre el título del anuncio, por uno basado en la clasificación de textos completos, mejorando la efectividad y reduciendo al mínimo el trabajo manual de asignación en aquellas ofertas que el sistema original no era capaz clasificar.
+
+Esta calificación más precisa y con capacidad de aplicar un mayor número de etiquetas, mejorará el matching entre ofertas-usuarios y, por tanto, los usuarios verán mejorado su servicio al disfrutar de una mayor capacidad de búsqueda, con más términos, listados con más resultados y, del mismo modo, los sistemas de notificaciones de ofertas ajustadas al perfil del usuario aumentarán sus envíos.
 
 
 Autor
@@ -10,18 +14,16 @@ Autor
 José Rodríguez Sánchez
 
 
-Acerca de este software
------------------------
-Corresponde a los anexos correspondientes al desarrollo del Trabajo Final de Máster sobre Procesamiento de lenguaje natural (PLN) del Máster Universitario Ciencia de datos de la Universitat Oberta de Catalunya
+Acerca de esta documentación
+----------------------------
+Corresponde a los anexos correspondientes al desarrollo del Trabajo Final de Máster sobre Procesamiento de lenguaje natural (PLN) del Máster Universitario Ciencia de datos de la Universitat Oberta de Catalunya.
 
 
-Dataset
--------
-El conjunto de datos estudiado se ha extraído de <a href="https://www.kaggle.com/vishalyo990/prediction-of-quality-of-wine/data">Kaggle</a>, la comunidad online de científicos de datos y machine learning de Google.
-<a href="https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009/downloads/winequality-red.csv/2">Descargar</a>
-
-[TFM . Estudio descriptivo](https://docs.google.com/spreadsheets/d/e/2PACX-1vQFMQfj4Hr4MkGt8LWHtPXxOxn8OHoCSOWzi7ySCNt1qo_N5Z6EwswFA3nlGgaa98a1dVOD1q6e4BV1/pubhtml)
+Estudio descriptivo
+-------------------
+Como soporte extra durante el estudio descriptivo de los datos, se ha recopilado información en el documento
+[TFM . Estudio descriptivo](https://docs.google.com/spreadsheets/d/e/2PACX-1vQFMQfj4Hr4MkGt8LWHtPXxOxn8OHoCSOWzi7ySCNt1qo_N5Z6EwswFA3nlGgaa98a1dVOD1q6e4BV1/pubhtml).
 
 Licencia
 --------
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Markdown Project Page">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>
+<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/es/" title="Reconocimiento-NoComercial-SinObraDerivada 3.0 España (CC BY-NC-ND 3.0 ES)">Reconocimiento-NoComercial-SinObraDerivada 3.0 España (CC BY-NC-ND 3.0 ES)</a>
